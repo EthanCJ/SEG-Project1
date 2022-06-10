@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"> </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <style type="text/css">
+        #logo {
+            width: 150px;
+        }
+        
+        .input-group-append {
+            cursor: pointer;
+        }
+    </style>
+    <title>Professeur de Peinture</title>
+</head>
+
+<body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-center">
+        <div class="container-fluid">
+            <a href="home.html"><img src="logo.png" id="logo" alt="Logo"></img>
+            </a>
+            <h1><a class="nav-link" style="font: arial; color: aliceblue; padding: 5px;" href="home.html">Professeur Peinture</a></h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse text-center" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <h2><a class="nav-link" href="services.html">Services</a></h2>
+                    </li>
+                    <li class="nav-item">
+                        <h2><a class="nav-link" href="équipe.html">L'équipe</a></h2>
+                    </li>
+
+                    <li class="nav-item">
+                        <h2><a class="nav-link" href="rendezVous.html">Créer une Rendez-Vous</a></h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="container mt-3">
+            <h2>Créer une Rendez-Vous</h2>
+            <form method="get" action="confirmation.html" class="pb-5">
+                <div class="mb-3 mt-3">
+                    <label for="name">Nom:</label>
+                    <input type="name" class="form-control" id="name" placeholder="Nom" name="name" required>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="email">Courriel:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Courriel" name="email" required>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" class="form-control" id="email" placeholder="Numéro de téléphone" name="phone" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="add">Address:</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="Address" name="add" required>
+                </div>
+
+                <label for="addService">Choisir tes services:</label>
+                <div class="addService">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="service" value="option1">
+                        <label class="form-check-label">Indoor Painting</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="service" value="option2">
+                        <label class="form-check-label">Outdoor Painting</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="service" value="option3">
+                        <label class="form-check-label">Fence Painting</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="service" value="option4">
+                        <label class="form-check-label">Deck Painting</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="service" value="option5">
+                        <label class="form-check-label">Dock Painting</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="service" value="option6">
+                        <label class="form-check-label">Waterproofing</label>
+                    </div>
+                </div>
+
+                <div class="mb-3  mt-3">
+                    <label for="add">Jour:</label>
+                    <input type="date" class="form-control" id="startDate" name="date" required/>
+                </div>
+
+                <div class="mb-3  mt-3">
+                    <label for="add">Autres Commentaires:</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="Commentaires" name="comment">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
